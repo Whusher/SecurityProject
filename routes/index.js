@@ -207,7 +207,7 @@ router.post('/hash', (req, res) => {
     const data  = req.body;
     const crypto = require('crypto');
 
-    const hash = crypto.createHash('sha512');
+    const hash = crypto.createHash('sha256');
 
     hash.update(data.mensaje);
 

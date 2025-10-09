@@ -1,11 +1,8 @@
 // config.js
-import dotenv from 'dotenv'
+require('dotenv').config();
+const { NODE_ENV, PORT, SECRET_KEY, SECRET_IV, ECNRYPTION_METHOD } = process.env;
 
-dotenv.config()
-
-const { NODE_ENV, PORT, SECRET_KEY, SECRET_IV, ECNRYPTION_METHOD } = process.env
-
-export default {
+module.exports = {
     env: NODE_ENV,
     port: PORT,
     secret_key: SECRET_KEY,

@@ -1,4 +1,4 @@
-import crypto from "crypto";
+const crypto =  require("crypto");
 
 function hash(message){
     const hash = crypto.createHash('sha256');
